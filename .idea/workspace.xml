@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d3da8a1-26c9-40cf-914c-c47ce7393af6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bIlmuZ6sczzfBtPpoi8JYAgtDQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d3da8a1-26c9-40cf-914c-c47ce7393af6" name="Default Changelist" comment="" />
+      <created>1588327650147</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588327650147</updated>
+      <workItem from="1588327651275" duration="1444000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1691" y="633" key="svn.passwordDialog" timestamp="1588327741293">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1691" y="633" key="svn.passwordDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1588327741293" />
+    <state x="1655" y="424" width="573" height="614" key="svn.repositoryBrowser" timestamp="1588327752887">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1655" y="424" width="573" height="614" key="svn.repositoryBrowser/0.23.2560.1417@0.23.2560.1417" timestamp="1588327752887" />
+    <state x="1732" y="511" key="svn4idea.import.options" timestamp="1588327706493">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1732" y="511" key="svn4idea.import.options/0.23.2560.1417@0.23.2560.1417" timestamp="1588327706493" />
+  </component>
+</project>
