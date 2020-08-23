@@ -38,7 +38,7 @@ public static String renderPageWithSetipAndTeardowns(PageData pageData, boolean 
 
 if/else문 while문 등에 들어가는 블록은 한 줄이어야 한다는 뜻이다. 한 줄로 간결하게 쓰려면 함수의 이름을 잘 지어야 한다.
 
-
+ 
 
 #### 한 가지만 해라 !
 
