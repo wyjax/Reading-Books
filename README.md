@@ -2,3 +2,4 @@
 
 1. Clean Code - 로버트 마틴
 2. Effective Java 3/E - 조슈아 블로크
+  - 0831
