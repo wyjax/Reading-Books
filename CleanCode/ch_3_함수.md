@@ -123,7 +123,7 @@ String.format("%s worked %.2f", name, hours);
 public String format(String format, Object... args);
 ```
 
-위 예제처럼하면 가변 인수 전부를 동등하게 취급하면 List형 인수 하나로 취급할 수 있다.
+위 예제처럼하면 가변 인수 전부를 동등하게 취급하면 List형 인수 ßß하나로 취급할 수 있다.
 
 
 
@@ -169,3 +169,4 @@ public boolean checkPasswordAndInitializeSession(...);
 // 으로 하면 된다. 물론 함수가 1가지만 해야하는 것을 위반한다.
 ```
 
+ñ
