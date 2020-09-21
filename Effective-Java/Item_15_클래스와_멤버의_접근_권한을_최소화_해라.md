@@ -27,3 +27,39 @@
 
 
 톱레벨 클래스나 인터페이스를  public로 선언하면 공개 API가 되고, private으로 선언하면 해당 패키지 안에서만 활용이 가능하다. 패지키 외에 다른 곳에서 사용되지 않는다면 private으로 처리한다. 그러면 이들은 API가 아닌 내부 구현이 되어 언제든 수정할 수 있다. 반면 public으로 선언한다면 API가 되므로 하위호환을 위해 영원히 관리해줘야 한다.
+
+
+
+public 클래스의 인스턴스 필드는 되도록 public이 아니어야 한다. 필드가 가변 객체를 참조하거나, final이 아닌 인스턴스 필드를 public으로 선언하면 그 필드에 담을 수 있는 값을 제한할 힘을 잃게 된다. 그 필드와 관련된 것은 불변식을 보장할 수 없게 된다. 
+
+
+
+길이가 0이 아닌 배열은 모두 변경이 가능하니 주의하자. 따라서 클래스에서 public static final 배열 필드를 두거나 이 필드를 반환하는 접근자 메서드를 제공해서는 안된다. 이런 필드나 접근자를 제공한다면 클라이언트에서 그 배열의 내용을 수정할 수 있게 된다. 
+
+
+
+```java
+// 보안 허점이 숨어 있다.
+public static final Thing[] VALUES = { ... };
+// 어떤 IDE가 생성하는 접근자는 private 배열 필드의 참조를 반환하여 이 같은 문제를 똑같이 일으키니 주의하자.
+
+// 해결책 1
+// 수정 불가능한 Collection으로 만든다.
+private static final Thing[] PRIVATE_VALUES = { ... };
+public static final List<Thing> VALUES = Collections.unmodifiableList(Arrays.asList(PRIVATE_VALUES));
+
+// 해결책 2
+// private으로 배열을 선언한 후에 public 메서드로 private 배열의 복사본을 return 하는 방법
+private static final Thing[] PRIVATE_VALUES = { ... };
+public static final Thing[] values() {
+    return PRIVATE_VALUES.clone();
+}
+```
+
+> 클라이언트가 무엇을 원하느냐에 따라서 둘 중 하나를 선택하면 된다. 어떤 반환타입이 쓰기 편한지 성능은 어떤 것을 써야 좋은지에 따라서 말이다.
+
+
+
+### 핵심정리
+
+###### 프로그램의 요소의 접근성은 가능한 한 최소한으로 하라. 꼭 필요한 것만 골라 *최소한의 public API*를 설계하자. 그 외에는 클래스, 인터페이스, 멤버가 의도치 않게 API로 공개 되는 일이 없도록 해야 한다. public 클래스는 상수용 public static final 필드 외에는 어떠한 public 필드도 가져서는 안 된다. public static final 필드가 참조하는 객체가 불변인지 확인하라.
