@@ -5,3 +5,4 @@
 3. 객체지향의 사실과 오해
 4. DDD Start
 5. DDD by Eric evans : http://www.withouthaste.com/codeNotes/domainDrivenDesign.php#header20
+6. You don't know js (study)
