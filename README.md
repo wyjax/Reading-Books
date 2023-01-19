@@ -8,3 +8,5 @@
 4. DDD Start
 5. DDD by Eric evans : http://www.withouthaste.com/codeNotes/domainDrivenDesign.php#header20
 6. You don't know js (study)
+7. 코틀린 쿡북
+8. 오브젝트 (조영호)
